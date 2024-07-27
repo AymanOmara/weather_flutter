@@ -14,5 +14,4 @@ class ForecastEntity {
     required this.minTemp,
     required this.temp,
   });
-
 }

@@ -12,5 +12,6 @@ Future<void> initializeDataInjector(GetIt injector) async {
   injector.registerSingleton(GetStorage());
   injector.registerSingleton(Dio());
   injector.registerSingleton<IUserLocal>(UserLocal(injector()));
+  injector.registerSingleton<IUserLocal>(UserLocal(injector()),instanceName: "userLocalTesting");
   injector.registerSingleton<IAPIService>(BaseApi(injector(),injector()));
 }
